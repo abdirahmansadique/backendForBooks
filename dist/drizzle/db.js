@@ -32,4 +32,4 @@ const databaseUrl = process.env.DATABASE_URL;
 if (!databaseUrl)
     throw new Error("DATABASE_URL is not set");
 const sql = (0, serverless_1.neon)(databaseUrl);
-exports.db = (0, neon_http_1.drizzle)(sql, { schema, logger: false });
+exports.db = (0, neon_http_1.drizzle)(sql, { schema, logger: true });
