@@ -8,4 +8,4 @@ if (!databaseUrl) throw new Error("DATABASE_URL is not set");
 
 const sql = neon(databaseUrl);
 
-export const db: NeonHttpDatabase<typeof schema> = drizzle(sql, { schema, logger: false });
+export const db: NeonHttpDatabase<typeof schema> = drizzle(sql, { schema, logger: true });
