@@ -7,5 +7,5 @@ exports.LibraryRouter = new hono_1.Hono();
 exports.LibraryRouter.get('/AllBooks', books_controller_1.getAllBooks);
 exports.LibraryRouter.get('/OneBook/:id', books_controller_1.getBook);
 exports.LibraryRouter.post('/books', books_controller_1.createBook);
-exports.LibraryRouter.put('/books/:id', books_controller_1.updateBook);
+exports.LibraryRouter.put('/BBooks/:id', books_controller_1.updateBook);
 exports.LibraryRouter.delete('/del/:id', books_controller_1.deleteBookC);
