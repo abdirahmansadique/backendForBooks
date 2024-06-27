@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LibraryRouter = void 0;
+const hono_1 = require("hono");
+const books_controller_1 = require("./books.controller");
+exports.LibraryRouter = new hono_1.Hono();
+exports.LibraryRouter.get('/AllBooks', books_controller_1.getAllBooks);
+exports.LibraryRouter.get('/OneBook/:id', books_controller_1.getBook);
+exports.LibraryRouter.post('/books', books_controller_1.createBook);
+exports.LibraryRouter.put('/books/:id', books_controller_1.updateBook);
+exports.LibraryRouter.delete('/del/:id', books_controller_1.deleteBookC);

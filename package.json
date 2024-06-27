@@ -1,0 +1,44 @@
+{
+  "name": "drizzle-orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "gen": "drizzle-kit generate",
+    "migrate": "tsx src/drizzle/migrate.ts",
+    "studio": "drizzle-kit studio",
+    "push": "drizzle-kit push"
+  },
+  "keywords": [],
+  "author": "Abdirahman Alli",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.0",
+    "hono": "^4.4.3",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.13",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@hono/node-server": "^1.11.2",
+    "@hono/prometheus": "^1.0.1",
+    "@hono/zod-validator": "^0.2.2",
+    "@neondatabase/serverless": "^0.9.3",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.14.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/nodemailer": "^6.4.15",
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.22.1",
+    "prom-client": "^15.1.2",
+    "tsx": "^4.11.2",
+    "typescript": "^5.4.5",
+    "zod": "^3.23.8"
+  }
+}
