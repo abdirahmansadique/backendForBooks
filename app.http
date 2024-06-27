@@ -7,11 +7,11 @@ Content-Type: application/json
 "year":"2003"
 }
 ###
-GET   http://localhost:3000/AllBooks
+GET   http://localhost:3000/books
 ###
-GET   http://localhost:3000/OneBook:1
+GET   http://localhost:3000/books/2
 ###
-PUT    http://localhost:3000/BBooks:1
+PUT    http://localhost:3000/books/1
 Content-Type: application/json
 
 {
@@ -19,4 +19,4 @@ Content-Type: application/json
 }
 ###
 
-DELETE http://localhost:3000/del:1
+DELETE http://localhost:3000/books/1
